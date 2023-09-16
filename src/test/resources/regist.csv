@@ -1,0 +1,8 @@
+memo,テストするURL,Postの場合のポストデータ,ステータスコードの期待値,レスポンスの扱い,レスポンスデータの期待値
+memo,test1,,,,
+get,https://httpbin.org/ip,,200,Json,"{
+  ""origin"": ""$myIP""
+}"
+POST,https://httpbin.org/post,"{
+  ""ip-address"": ""$myIP""
+}",200,None,
